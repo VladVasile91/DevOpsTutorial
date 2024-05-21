@@ -2,7 +2,7 @@
 #include "gtest/gtest.h"
 #include <Rectangle.hpp>
 
-TEST(testRectangle, testRectanglePermiter)
+TEST(testRectangle, testRectanglePerimeter)
 {
     const size_t expectedPerimeter = 30U;
     const Rectangle r1(5U, 10U);
