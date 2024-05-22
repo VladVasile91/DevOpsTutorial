@@ -11,8 +11,8 @@ TEST(testRectangle, testRectanglePerimeter)
 
 TEST(testRectangle, testRectangleArea)
 {
-    const size_t expectedArea = 50U;
-    const Rectangle r1(5U, 10U);
+    const size_t expectedArea = 60U;
+    const Rectangle r1(6U, 10U);
     EXPECT_EQ(r1.calculateArea(), expectedArea);
 }
 
