@@ -1,3 +1,5 @@
 #!/bin/bash
-cd test
-./rectangle-test --gtest_output=xml:test_results.xml || true
+cd "$WORKSPACE"
+./build/test/rectangle-test --gtest_output=xml:test/test_results.xml || true
+
+
