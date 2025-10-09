@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         BUILD_SCRIPT = './buildMain.sh'
-        TEST_SCRIPT = './run_tests.sh'
+        TEST_SCRIPT = './runTests.sh'
     }
 
     stages {
