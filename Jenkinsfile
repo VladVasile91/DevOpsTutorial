@@ -18,21 +18,19 @@ pipeline {
         stage('Test') {
             steps {
                 echo "Running tests..."
-                // Run test script, continue even if some tests fail
                 sh "${TEST_SCRIPT} || true"
-
-                // Publish Google Test results
                 junit 'test/test_results.xml'
             }
         }
+
     }
 
     post {
         success {
-            echo "✅ Build and tests succeeded for ${env.BRANCH_NAME}"
+            echo "Build and tests succeeded for ${env.BRANCH_NAME}"
         }
         failure {
-            echo "❌ Build or tests failed for ${env.BRANCH_NAME}"
+            echo "Build or tests failed for ${env.BRANCH_NAME}"
         }
     }
 }
