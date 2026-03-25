@@ -4,7 +4,7 @@
 
 int main()
 {
-	Rectangle r(20,10);
+	Rectangle r(10,10);
 	std::cout<<"Rectangle permiterer result: " << r.calculatePermieter() << std::endl;
 	std::cout<<"Rectangle area result: " << r.calculateArea() << std::endl;
 	
